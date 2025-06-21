@@ -36,3 +36,130 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+
+body {
+  background: linear-gradient(135deg, #ffe4ec, #f0e7ff, #e6faff, #fff5d9);
+  background-size: 400% 400%;
+  animation: pastelShift 15s ease infinite;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff0f6;
+  border-bottom: 2px solid #ffd6e8;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #a94c86;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ae67d9;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #ff80ab;
+  margin-bottom: 0.2rem;
+}
+
+/* Inputs */
+input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e3d4ff;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background-color: #fefaff;
+}
+
+/* Submit Button */
+button,
+input[type="submit"] {
+  background-color: #ffc0cb;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #ff91a4;
+}
+
+/* Delete Button */
+.deleteBtn {
+  background-color: #ffa3a3;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.deleteBtn:hover {
+  background-color: #ff6b6b;
+}
+
+/* Separator */
+hr {
+  border: 1px solid #eee;
+  margin: 1.5rem 0;
+}
+
+/* Todos List */
+.todoItem {
+  background-color: #fff8fd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #b69df8;
+  border-radius: 10px;
+}
+
+/* Animation */
+@keyframes pastelShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
